@@ -1,0 +1,62 @@
+.admin-manage {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__btn {
+    padding: 8px 20px;
+    background-color: #000;
+    border-radius: 4px;
+    color: #fff;
+    transition: all 0.3s ease;
+    &:hover {
+      opacity: 0.8;
+      transform: scale(0.98);
+    }
+  }
+  &__table {
+    width: 100%;
+  }
+  &__th {
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    background-color: rgb(249, 250, 252);
+  }
+  &__td {
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(224, 224, 224);
+  }
+  &__td-action {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  &__td-btn {
+    width: 34px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    svg {
+      font-size: 16px;
+    }
+    &:hover {
+      opacity: 0.8;
+      transform: scale(0.98);
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.admin-header {
+  padding: 15px 29px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 251px 1fr;
+    gap: 20px;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__logo-box {
+    display: flex;
+    align-items: center;
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__menu-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #000;
+    color: #fff;
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}

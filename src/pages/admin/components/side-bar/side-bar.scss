@@ -1,0 +1,58 @@
+.side-bar {
+  position: sticky;
+  top: 70px;
+  left: 0;
+  width: 280px;
+  height: calc(100vh - 70px);
+  background-color: #fff;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+  &--active {
+    width: 76px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+  }
+  &__item {
+    width: 100%;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    width: 100%;
+  }
+  &__icon {
+    min-width: 56px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 21px;
+      height: 21px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    text-wrap: nowrap;
+  }
+  &__link:hover {
+    background-color: #00000013;
+  }
+  &__link.active {
+    background-color: #000000;
+    color: #fff;
+  }
+  &__link--active {
+    span {
+      opacity: 0;
+    }
+  }
+}

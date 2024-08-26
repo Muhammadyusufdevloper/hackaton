@@ -1,0 +1,51 @@
+.profile {
+  padding: 30px 20px 20px;
+  &__wrapper {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  &__cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 30px;
+  }
+  &__text {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  &__title {
+    font-size: 18px;
+  }
+  &__password {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 400px;
+    height: 80px;
+  }
+  &__edit-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    right: 10px;
+    top: 10px;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
